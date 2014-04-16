@@ -5,7 +5,7 @@ include ../Makefile.inc
 #INC = -I$(SSLBUILD)/include,$(KATCP)
 #LIB = -L$(KATCP) -lkatcp
 #LIB = -L$(SSLBUILD) -lssl -lcrypto -lz -ldl
-LIB = -lssl 
+LIB = -lssl -lcrypto 
 
 EXE = wss
 SRC = server.c wss.c

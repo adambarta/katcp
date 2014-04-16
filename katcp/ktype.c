@@ -74,6 +74,7 @@ int binary_search_type_list_katcp(struct katcp_type **ts, int t_size, char *str)
   high = t_size - 1;
   
   while (low <= high){
+    //safe
     mid = low + ((high-low) / 2);
 
     t = ts[mid];
